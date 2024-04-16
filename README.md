@@ -77,6 +77,11 @@ This is the place for you to write reflections:
 ### Mandatory (Publisher) Reflections
 
 #### Reflection Publisher-1
+1. Penggunaan interface atau trait dalam Observer pattern tergantung pada kompleksitas sistem dan kebutuhan spesifiknya. Untuk BambangShop, karena hanya `Subscriber`, tidak perlu menggunakan trait atau interface. Namun, untuk fleksibilitas di masa depan, mempertimbangkan penggunaannya mungkin berguna.
+
+2. Untuk kasus ini gunakan DashMap. Menggunakan Vec akan memerlukan dua vector terpisah untuk menyimpan id program dan url, yang dapat menyulitkan dalam mengelola dan memperbarui data. Dengan DashMap, kita dapat memiliki korelasi antara id program dan url subscriber yang lebih efisien.
+
+3. DashMap memastikan operasi pada map SUBSCRIBERS dapat dilakukan dengan aman dan efisien oleh banyak thread jadi sangat cocok untuk keamanan multithreading Rust. Singleton pattern mungkin memastikan satu instance objek, tetapi tidak menjamin thread safety seperti yang ditawarkan oleh DashMap.
 
 #### Reflection Publisher-2
 
