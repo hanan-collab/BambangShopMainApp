@@ -84,5 +84,10 @@ This is the place for you to write reflections:
 3. DashMap memastikan operasi pada map SUBSCRIBERS dapat dilakukan dengan aman dan efisien oleh banyak thread jadi sangat cocok untuk keamanan multithreading Rust. Singleton pattern mungkin memastikan satu instance objek, tetapi tidak menjamin thread safety seperti yang ditawarkan oleh DashMap.
 
 #### Reflection Publisher-2
+1. Memisahkan Service dari Repository dalam pola Model-View-Controller (MVC) penting untuk mematuhi prinsip single responsibility. `Service` mengelola logika bisnis dan pengolahan data dari Repository, sementara `Repository` bertanggung jawab atas akses dan manipulasi data dalam database. Pemisahan ini meningkatkan struktur, pemahaman, dan pemeliharaan kode.
+
+2. Jika hanya menggunakan Model, akan tidak fleksibel dalam pengembangan kedepannya. Karena akan sengat bergantung antar komponen, dimana setiap perubahan kode di model akan mempengaruhi seluruh kode.
+
+3. Postman adalah alat penting dalam pengujian dan validasi aplikasi. Dengan fitur-fitur seperti pengiriman permintaan HTTP, pengecekan respons, dan CRUD, saya dapat memastikan fungsionalitas aplikasi dengan cepat dan efisien. Kemampuan untuk menyesuaikan permintaan dan otomatisasi pengujian mempermudah dalam pengembangan aplikasi.
 
 #### Reflection Publisher-3
